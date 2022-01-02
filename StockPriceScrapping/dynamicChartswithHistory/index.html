@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Static Chart</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="onLoadPage()">
+    <div class="container">
+      <div id="tvchart">
+       
+      </div>
+      <div id="top-50-stocks">
+        <div id="myData" class="section">
+          <div class="top-heading">Top Gainers</div>
+          <div class="details">
+            <span>Company Name</span>
+            <span>value</span>
+            <span>Gain</span>
+          </div>
+          <table id="table"></table>
+        </div>
+        <div id="myData" class="section">
+          <div class="top-heading">Top Losers</div>
+          <div class="details">
+            <span>Company Name</span>
+            <span>value</span>
+            <span>Gain</span>
+          </div>
+          <table id="table2"></table>
+        </div>
+      </div>
+    </div>
+    <!-- <div >hello</div> -->
+    <div class="market-cards">
+      <div class="card">
+        <div class="inside-card">
+          <div id="name1">NIFITY</div>
+          <div id="value1"></div>
+        </div>
+        <div class="inside-card">
+          <div class="name1">NSE</div>
+          <div id="exValue" style="color: greenyellow;"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="inside-card">
+          <div id="name1">SENSEX</div>
+          <div id="value2"></div>
+        </div> 
+        <div class="inside-card">
+          <div id="name1">BSE</div>
+          <div id="exValue1" style="color: greenyellow;" ></div>
+        </div>
+      </div>
+    </div>
+    </div>
+      
+    <!-- <button id="btn"></button> -->
+  </body>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"
+  ></script>
+  <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</html>
